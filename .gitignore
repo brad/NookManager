@@ -1,3 +1,5 @@
 staging/
 sdcard/
 NookManager.img
+.vagrant
+*~
