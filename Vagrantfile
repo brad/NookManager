@@ -15,5 +15,5 @@ Vagrant.configure("2") do |config|
 
   # Provisioning
   # This script is run each time the VM is brought up
-  config.vm.provision :shell, :path => "deps.sh"
+  config.vm.provision :shell, :path => "vagrant_bootstrap.sh"
 end
