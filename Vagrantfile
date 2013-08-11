@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
-  # Provisioning
-  # This script is run each time the VM is brought up
+  # These scripts are run each time the VM is brought up
   config.vm.provision :shell, :path => "vagrant_bootstrap.sh"
+  config.vm.provision :shell, :path => "vagrant_build.sh"
 end
